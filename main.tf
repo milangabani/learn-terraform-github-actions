@@ -12,6 +12,7 @@ terraform {
   required_version = "~> 1.0"
 
   backend "remote" {
+    # Terraform Backend for Terraform Cloud
     organization = "ACG-TF-MG"
     workspaces {
       name = "aws-github-actions"
